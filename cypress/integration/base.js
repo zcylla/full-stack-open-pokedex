@@ -7,7 +7,10 @@ describe('Pokedex', function () {
     )
   })
 
-  // it('pokemon page can be navigated to', function () {
-  //   cy.visit('http://localhost:5000')
-  // })
+  it('pokemon page can be navigated to', function () {
+    cy.visit('/')
+    cy.contains('ivysaur').click()
+    cy.url().should('eq', 'http://localhost:5000/pokemon/ivysaur')
+    cy.contains('chlorophyll')
+  })
 })
