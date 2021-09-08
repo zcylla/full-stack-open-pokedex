@@ -1,3 +1,5 @@
+/* eslint-disable */
+throw new Error('Test error')
 const express = require('express')
 const app = express()
 
