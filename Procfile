@@ -1,1 +1,1 @@
-web: not gonna work
+web: npm run start-prod
