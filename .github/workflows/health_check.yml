@@ -1,0 +1,14 @@
+name: Scheduled Healthcheck
+
+on: [push]
+
+jobs:
+  health_check:
+    name: Check the deployed service URL
+    runs-on: ubuntu-latest
+    steps:
+      - name: check
+        uses: jtalk/url-health-check-action@v2
+        with:
+          url: https://damp-fortress-14138.herokuapp.com
+
