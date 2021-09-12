@@ -1,8 +1,6 @@
 name: Scheduled Healthcheck
 
-on:
-  schedule:
-    - cron: '0 0 * * *'
+on: [push]
 
 jobs:
   health_check:
